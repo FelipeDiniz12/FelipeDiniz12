@@ -1,0 +1,61 @@
+GITHUB & GIT
+
+BASIC COMMANDS
+
+$ git init // initialize local Git repository -> needed to create the folder ".git" in the folder that u r working with ur project in ur machine
+
+$ git add <file_name>.<extension> // add file(s) to index -> send the project to an commit area. To remove it use the command below:
+$ git rm --cached <file_name>.<extension>
+
+$ git status  // check status of working tree
+
+$ git commit // commit changes in index
+
+$ git push  // push to remote repository
+
+$ git pull // pull latest from remote repository
+
+$ git clone // clone repository into a new directory
+
+
+INSTALLING GIT
+
+Windows
+
+http://git-scm.com/download/win
+
+
+OTHER COMMANDS
+
+$ git add *.<extension>  // add every file with this certain extension to the branch. To remove every file with the same extension, it's the same stuff, just write the command below:
+$ git rm --cached *.<extension>
+
+
+$ git add . // this command makes EVERY file in ur directory to be added to the branch. 
+
+$ clear // clear the blackscreen
+
+$ touch .gitignore  // create a file in the directory that can be used to define which files wouldn't be added to the branch. Just type inside this file the <file_name>.<extension> of the file that u don't want to get added to the branch. U can do it also with directories inside ur head one just adding "/<directory_name>" inside the file ".gitignore". The command *.<extension> works also to ignore every file with an given extension.
+
+$ touch <file_name>.<extension> // creates a file with certain extension
+ex.: $ touch index.html
+$ touch app.js
+
+$ git branch <BranchName> // create a branch 
+
+COMMENTS
+
+If u have ur <file_name>.<extension> already added into the branch, and provide some modification, without adding the file again to the branch, when u type the command "$ git status", u gonna see that u have ur old project into the branch, but the new one it's now uploaded.
+
+When u type the command "$ git commit", a new window will open, and to type on it u need to press "i" button. Then u r free to type into it.
+
+
+"#" is understanding as comment for git
+
+To get outta the type(insert) mode, just press escape(ESC)
+
+To get outta of this new window, after ESC, type ":wq" and then ENTER
+
+If u don't wanna to get into that new window when u r commiting some files, just type "$ git commit -m 'Some comment'", and then ur file's gonna be uploaded without openning the new screen.
+
+
